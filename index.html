@@ -188,56 +188,56 @@
       <p class="lead">A sample of modeling, GIS, and data-analysis work from across my research projects.</p>
       <div class="project-grid">
         <div class="project-card">
-          <img src="assets/research/arcgis-portfolio.jpg" alt="ArcGIS study area map of monitoring stations across Bangladesh">
+          <img src="assets/research/arcgis-portfolio.jpg" data-full="assets/research/arcgis-portfolio-full.jpg" alt="ArcGIS study area map of monitoring stations across Bangladesh" class="lightbox-trigger" tabindex="0" role="button">
           <div class="project-card-body">
             <h3>ArcGIS Portfolio</h3>
             <p>Cartographic study-area maps built in ArcGIS, plotting field monitoring stations across Bangladesh for site selection and spatial reporting.</p>
           </div>
         </div>
         <div class="project-card">
-          <img src="assets/research/gosat-co2.jpg" alt="Map of CO2 concentration over Bangladesh from GOSAT satellite data">
+          <img src="assets/research/gosat-co2.jpg" data-full="assets/research/gosat-co2-full.jpg" alt="Map of CO2 concentration over Bangladesh from GOSAT satellite data" class="lightbox-trigger" tabindex="0" role="button">
           <div class="project-card-body">
             <h3>Atmospheric Gas Concentration (GOSAT)</h3>
             <p>Mapped CO2 and CH4 concentration trends over Bangladesh using GOSAT satellite retrievals.</p>
           </div>
         </div>
         <div class="project-card">
-          <img src="assets/research/cyclone-remal.jpg" alt="Wind velocity map during Cyclone Remal">
+          <img src="assets/research/cyclone-remal.jpg" data-full="assets/research/cyclone-remal-full.jpg" alt="Wind velocity map during Cyclone Remal" class="lightbox-trigger" tabindex="0" role="button">
           <div class="project-card-body">
             <h3>Cyclone Remal</h3>
             <p>WRF-based wind velocity fields tracking Cyclone Remal as it intensified and made landfall on the Bangladesh coast, May 2024.</p>
           </div>
         </div>
         <div class="project-card">
-          <img src="assets/research/data-analysis.jpg" alt="Regression plot of CO2 versus CH4 concentration">
+          <img src="assets/research/data-analysis.jpg" data-full="assets/research/data-analysis-full.jpg" alt="Regression plot of CO2 versus CH4 concentration" class="lightbox-trigger" tabindex="0" role="button">
           <div class="project-card-body">
             <h3>Data Analysis</h3>
             <p>Regression and correlation analysis linking greenhouse gas concentrations to land cover, elevation, rainfall, and temperature.</p>
           </div>
         </div>
         <div class="project-card">
-          <img src="assets/research/model-result-visualizations.jpg" alt="Taylor diagrams comparing WRF and MPAS model performance">
+          <img src="assets/research/model-result-visualizations.jpg" data-full="assets/research/model-result-visualizations-full.jpg" alt="Taylor diagrams comparing WRF and MPAS model performance" class="lightbox-trigger" tabindex="0" role="button">
           <div class="project-card-body">
             <h3>Model Result Visualizations</h3>
             <p>Verification figures (Taylor diagrams, bias and RMSE comparisons) evaluating WRF and MPAS-A configurations against observations.</p>
           </div>
         </div>
         <div class="project-card">
-          <img src="assets/research/openfoam-simulation.jpg" alt="Computational mesh for river and estuary bathymetry in OpenFOAM">
+          <img src="assets/research/openfoam-simulation.jpg" data-full="assets/research/openfoam-simulation-full.jpg" alt="Computational mesh for river and estuary bathymetry in OpenFOAM" class="lightbox-trigger" tabindex="0" role="button">
           <div class="project-card-body">
             <h3>OpenFOAM Mesh &amp; Simulation</h3>
             <p>Unstructured computational mesh built for river and estuary bathymetry simulation in OpenFOAM.</p>
           </div>
         </div>
         <div class="project-card">
-          <img src="assets/research/weather-forecast-feb2024.jpg" alt="WRF surface temperature forecast over South Asia">
+          <img src="assets/research/weather-forecast-feb2024.jpg" data-full="assets/research/weather-forecast-feb2024-full.jpg" alt="WRF surface temperature forecast over South Asia" class="lightbox-trigger" tabindex="0" role="button">
           <div class="project-card-body">
             <h3>Weather Forecast, Feb 2024</h3>
             <p>WRF surface temperature and wind forecasts over South Asia, part of a short-range weather forecasting exercise.</p>
           </div>
         </div>
         <div class="project-card">
-          <img src="assets/research/wrf-wind-velocity.jpg" alt="WRF simulated wind velocity map over South Asia">
+          <img src="assets/research/wrf-wind-velocity.jpg" data-full="assets/research/wrf-wind-velocity-full.jpg" alt="WRF simulated wind velocity map over South Asia" class="lightbox-trigger" tabindex="0" role="button">
           <div class="project-card-body">
             <h3>WRF Wind Velocity</h3>
             <p>WRF-simulated wind velocity fields over South Asia, June 2022.</p>
@@ -326,6 +326,11 @@
     <a href="#top">Back to top ↑</a>
   </div>
 </footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close enlarged image">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
 
 <script src="js/main.js"></script>
 </body>

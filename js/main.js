@@ -33,3 +33,37 @@ const spy = new IntersectionObserver(
 );
 
 sections.forEach((section) => spy.observe(section));
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+function openLightbox(trigger) {
+  lightboxImg.src = trigger.getAttribute('data-full') || trigger.src;
+  lightboxImg.alt = trigger.alt;
+  lightbox.hidden = false;
+}
+
+function closeLightbox() {
+  lightbox.hidden = true;
+  lightboxImg.src = '';
+}
+
+document.querySelectorAll('.lightbox-trigger').forEach((img) => {
+  img.addEventListener('click', () => openLightbox(img));
+  img.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openLightbox(img);
+    }
+  });
+});
+
+lightbox.addEventListener('click', closeLightbox);
+lightboxClose.addEventListener('click', (e) => {
+  e.stopPropagation();
+  closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+});
